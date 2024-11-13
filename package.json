@@ -1,6 +1,6 @@
 {
   "name": "@heliofi/solana-vanity-keypair-generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate Solana vanity keypairs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
