@@ -5,10 +5,13 @@
   "main": "lib/index.js",
   "author": "michaelbeerhelio <michael.beer@helio.co>",
   "license": "MIT",
-  "files": [
-    "lib",
-    "native/index.node"
-  ],
+    "files": [
+      "lib",
+      "native/index.node",
+      "native/src",
+      "native/Cargo.toml",
+      "native/build.rs"
+    ],
   "dependencies": {
     "neon-cli": "^0.10.1"
   },
