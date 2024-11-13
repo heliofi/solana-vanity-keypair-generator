@@ -4,7 +4,6 @@ export interface VanityKeypairResult {
     publicKey: string;
     privateKey: string;
     attempts: number;
-    durationMs: number;
 }
 
 /**

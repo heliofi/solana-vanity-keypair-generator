@@ -2,7 +2,6 @@ export interface VanityKeypairResult {
     publicKey: string;
     privateKey: string;
     attempts: number;
-    durationMs: number;
 }
 /**
  * Generates a Solana keypair with a vanity address ending in the specified suffix
