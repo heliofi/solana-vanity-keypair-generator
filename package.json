@@ -8,10 +8,7 @@
   "license": "MIT",
   "files": [
     "lib",
-    "native/index.node",
-    "native/src",
-    "native/Cargo.toml",
-    "native/build.rs"
+    "native/index.node"
   ],
   "dependencies": {
     "neon-cli": "^0.10.1"
