@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "Generate Solana vanity keypairs",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "author": "michaelbeerhelio <michael.beer@helio.co>",
   "license": "MIT",
   "files": [
@@ -15,20 +16,16 @@
   "dependencies": {
     "neon-cli": "^0.10.1"
   },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
+  },
   "scripts": {
     "install": "neon build",
-    "build": "neon build",
-    "build-release": "neon build --release",
-    "prepublishOnly": "neon build --release"
-  },
-  "keywords": [
-    "solana",
-    "vanity",
-    "keypair",
-    "address"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/heliofi/solana-vanity-keypair-generator.git"
+    "build": "tsc && neon build",
+    "build-release": "tsc && neon build --release",
+    "prepublishOnly": "tsc && neon build --release",
+    "test:quick": "ts-node lib/test.ts"
   }
 }

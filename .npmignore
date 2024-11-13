@@ -1,0 +1,9 @@
+/target
+/native/target
+/native/artifacts.json
+Cargo.lock
+**/*.rs.bk
+*.log
+.git
+.gitignore
+node_modules

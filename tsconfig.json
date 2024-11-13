@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "es2018",
+      "module": "commonjs",
+      "declaration": true,
+      "outDir": "./lib",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "baseUrl": ".",
+      "paths": {
+        "@heliofi/solana-vanity-keypair-generator/*": ["./*"]
+      },
+      "typeRoots": ["./lib/types", "./node_modules/@types"]
+    },
+    "include": ["lib/**/*"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+  }
