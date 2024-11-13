@@ -5,10 +5,22 @@
   "main": "lib/index.js",
   "author": "michaelbeerhelio <michael.beer@helio.co>",
   "license": "MIT",
+  "files": [
+    "lib",
+    "native/index.node"
+  ],
   "dependencies": {
     "neon-cli": "^0.10.1"
   },
   "scripts": {
-    "install": "neon build"
+    "install": "neon build",
+    "build": "neon build",
+    "build-release": "neon build --release",
+    "prepublishOnly": "neon build --release"
+  },
+  "keywords": ["solana", "vanity", "keypair", "address"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heliofi/solana-vanity-keypair-generator.git"
   }
 }
